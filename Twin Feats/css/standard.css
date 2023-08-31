@@ -1,4 +1,10 @@
 nav {
     background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
     color: white;
+    text-decoration: none;
 }
