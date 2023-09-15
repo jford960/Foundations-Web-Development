@@ -1,0 +1,14 @@
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(/CodeChallenge3/images/kitten.jpg);
+}
