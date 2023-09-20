@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: section1; }
+.item2 { grid-area: section2; }
+.item3 { grid-area: section3; }
+.item4 { grid-area: section4; }
+.item5 { grid-area: section5; }
+.item6 { grid-area: section6; }
+.item7 { grid-area: section7; }
+.item8 { grid-area: section8; }
+.item9 { grid-area: section9; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'section1 section1 section1 section1 section1 section1 section1'
+    'section2 section3 section3 section4 section4 section5 section5' 
+    'section2 section6 section6 section6 section7 section8 section8'
+    'section2 section6 section6 section6 section7 section9 section9';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1">section1</div>
+  <div class="item2">section2</div>
+  <div class="item3">section3</div>  
+  <div class="item4">section4</div>
+  <div class="item5">section5</div>
+  <div class="item6">section6</div>
+  <div class="item7">section7</div>
+  <div class="item8">section8</div>
+  <div class="item9">section9</div>
+</div>
+
+</body>
+</html>
