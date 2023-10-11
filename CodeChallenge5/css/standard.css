@@ -1,0 +1,47 @@
+nav {
+    background-color: red;
+    display: flex;
+    justify-content:center;
+    width:100%;
+}
+
+.NavBottom{
+    background-color: orange;
+}
+
+.NavTop{
+    background-color: green;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+p{
+    font-family: 'Lorem', 'Times New Roman';
+}
+
+#Pictures{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+    .NavTop{
+        float: none;
+        width: 100%;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .NavBottom{
+        display: none;
+    }
+
+    #Pictures{
+        flex-direction: column;
+    }
+  }
