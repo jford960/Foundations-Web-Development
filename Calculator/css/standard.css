@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;}
+
+.calculator{
+    display: grid;
+    width: 50%;
+    height: 75%;
+    font-size: x-large;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    grid-template-areas: 
+    'screenArea screenArea screenArea screenArea'
+    '. . . .';
+}
+
+.screen{
+    background-color: orange;
+    text-align: end;
+    grid-area: screenArea;
+}
+
+.keys{
+    justify-content: center;
+    align-content: center;
+    font-size: x-large;
+    display: grid;
+    grid-template-areas: 
+    '. . . .'
+    '. . . .'
+    '. . . .'
+    '. zero zero .'
+    'clear clear equals equals';
+}
+
+#zero{
+    grid-area: zero;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+#equals{
+    grid-area: equals;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
