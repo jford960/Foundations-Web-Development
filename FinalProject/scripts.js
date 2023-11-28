@@ -8,10 +8,12 @@ for (let index = 0; index < headerBtns.length; index++) {
 }
 
 function useButton(n) {
-    if (btnContents[n].style.display !== 'none') {
+    if (btnContents[n].style.display == 'block') {
         btnContents[n].style.display = 'none'
+        btnContents[n].toggleAttribute('active')
     }
     else {
         btnContents[n].style.display = 'block'
+        btnContents[n].toggleAttribute('active')
     }
 }

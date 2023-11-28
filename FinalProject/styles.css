@@ -18,6 +18,20 @@ nav a:hover{
     background-color: red;
 }
 
+.btnHeader{
+    width: 100%;
+    text-align: left;
+}
+
+.btnHeader:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    float: right;
+}
+
+.active:after{
+    content: "\2796";
+}
+
 .btnContent{
     display: none
 }
