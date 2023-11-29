@@ -29,7 +29,7 @@ nav a:hover{
 }
 
 .active:after{
-    content: "\2796";
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 .btnContent{

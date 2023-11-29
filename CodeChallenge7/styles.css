@@ -1,0 +1,57 @@
+* {
+    font-size: large;
+    justify-content: center;
+}
+
+body {
+    background-color: greenyellow;
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+}
+
+nav {
+    background-color: darkblue;
+    padding: 1px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content img {
+    width: 50vw;
+    margin: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content img {
+        width: 80vw;
+    }
+
+}
