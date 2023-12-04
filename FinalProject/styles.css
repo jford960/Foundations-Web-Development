@@ -1,37 +1,96 @@
-nav a{
-    text-decoration: none;
-    padding: 10px;
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: darkgoldenrod;
+	display: flex;
+	justify-content: space-around;
 }
 
-nav ul{
+nav a {
+	width: 20%;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-size: larger;
+	padding: 10px;
+}
+
+/* nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-} 
+}  */
 
-nav li{
+/* nav li{
     display: inline-block;
+} */
+
+nav a:hover {
+	background-color: red;
 }
 
-nav a:hover{
-    background-color: red;
+.btnHeader,
+.btnFooter {
+	width: 100%;
+	display: flex;
+	text-align: left;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.btnHeader{
-    width: 100%;
-    text-align: left;
+.btnContent {
+	/* margin-top: 10px; */
+	padding: 5px;
+	/* padding-bottom: 0; */
+	background-color: antiquewhite;
+	/* opacity: 90%; */
+	display: none;
 }
 
-.btnHeader:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    float: right;
+.btnFooter {
+	display: none;
 }
 
-.active:after{
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+/* .btnContent img{
+    opacity: 100%;
+} this isn't working yet */
+
+main {
+	margin-top: 50px;
+	display: grid;
+	width: 90%;
+	padding-left: 5%;
 }
 
-.btnContent{
-    display: none
+body.charactersBackground {
+	background-image: url(images/backgrounds.png);
+	background-color: aqua;
+	background-size: calc(100% / 3);
+}
+
+body.AangBody {
+	background-image: url(images/airbackgrounds.png);
+	background-color: #f49a4a;
+	background-size: calc(100% / 7);
+}
+
+body.kataraBody {
+	background-image: url(images/waterbackgrounds.png);
+	background-color: #19365b;
+	background-size: calc(100% / 7);
+}
+
+body.tophBody {
+	background-image: url(images/earthbackgrounds.png);
+	background-color: #2e2a13;
+	background-size: calc(100% / 7);
+}
+
+body.zukoBody {
+	background-image: url(images/firebackgrounds.png);
+	background-color: #923a1b;
+	background-size: calc(100% / 7);
 }
