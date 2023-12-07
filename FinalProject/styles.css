@@ -3,7 +3,7 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: darkgoldenrod;
+	background-color: goldenrod;
 	display: flex;
 	justify-content: space-around;
 }
@@ -17,19 +17,38 @@ nav a {
 	padding: 10px;
 }
 
-/* nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-}  */
-
-/* nav li{
-    display: inline-block;
-} */
-
 nav a:hover {
-	background-color: red;
+	background-color: darkgoldenrod;
+}
+
+.charContainer {
+	display: grid;
+	grid-template-columns: 45% 45%;
+	grid-template-rows: 45% 45%;
+}
+
+.charContainer img {
+	width: max-content;
+}
+
+#charPageAang {
+	background-image: url(images/airbackgrounds.png);
+	background-size: cover;
+}
+
+#charPageKatara {
+	background-image: url(images/waterbackgrounds.png);
+	background-size: cover;
+}
+
+#charPageToph {
+	background-image: url(images/earthbackgrounds.png);
+	background-size: cover;
+}
+
+#charPageZuko {
+	background-image: url(images/firebackgrounds.png);
+	background-size: cover;
 }
 
 .btnHeader,
@@ -42,21 +61,19 @@ nav a:hover {
 }
 
 .btnContent {
-	/* margin-top: 10px; */
 	padding: 5px;
-	/* padding-bottom: 0; */
-	background-color: antiquewhite;
-	/* opacity: 90%; */
+	background-color: rgb(250, 234, 214, 0.94);
 	display: none;
+}
+
+.btnContent * {
+	margin-top: .5rem;
+	margin-bottom: .25rem;
 }
 
 .btnFooter {
 	display: none;
 }
-
-/* .btnContent img{
-    opacity: 100%;
-} this isn't working yet */
 
 main {
 	margin-top: 50px;
@@ -66,7 +83,6 @@ main {
 }
 
 body.charactersBackground {
-	background-image: url(images/backgrounds.png);
 	background-color: aqua;
 	background-size: calc(100% / 3);
 }
