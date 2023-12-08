@@ -21,34 +21,48 @@ nav a:hover {
 	background-color: darkgoldenrod;
 }
 
+#indexTitle {
+	margin-top: 50px;
+}
+
 .charContainer {
-	display: grid;
-	grid-template-columns: 45% 45%;
-	grid-template-rows: 45% 45%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	row-gap: 10px;
+}
+
+.charContainer a {
+	width: 45%;
 }
 
 .charContainer img {
-	width: max-content;
+	width: 100%;
+	height: 100%;
 }
 
 #charPageAang {
 	background-image: url(images/airbackgrounds.png);
 	background-size: cover;
+	background-repeat: round;
 }
 
 #charPageKatara {
 	background-image: url(images/waterbackgrounds.png);
 	background-size: cover;
+	background-repeat: round;
 }
 
 #charPageToph {
 	background-image: url(images/earthbackgrounds.png);
 	background-size: cover;
+	background-repeat: round;
 }
 
 #charPageZuko {
 	background-image: url(images/firebackgrounds.png);
 	background-size: cover;
+	background-repeat: round;
 }
 
 .btnHeader,
@@ -84,7 +98,7 @@ main {
 
 body.charactersBackground {
 	background-color: aqua;
-	background-size: calc(100% / 3);
+	background-size: cover;
 }
 
 body.AangBody {
@@ -109,4 +123,20 @@ body.zukoBody {
 	background-image: url(images/firebackgrounds.png);
 	background-color: #923a1b;
 	background-size: calc(100% / 7);
+}
+
+
+@media screen and (max-width: 425px) {
+	.charContainer {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.charContainer a {
+		width: 90%;
+	}
+
+	body.size {
+		background-size: calc(100%/4);
+	}
 }
