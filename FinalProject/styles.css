@@ -21,8 +21,16 @@ nav a:hover {
 	background-color: darkgoldenrod;
 }
 
+
+
 #indexTitle {
+	display: flex;
+	justify-content: center;
 	margin-top: 50px;
+}
+
+#indexTitle img {
+	width: 100%;
 }
 
 .charContainer {
@@ -33,7 +41,7 @@ nav a:hover {
 }
 
 .charContainer a {
-	width: 45%;
+	width: 40%;
 }
 
 .charContainer img {
@@ -96,6 +104,11 @@ main {
 	padding-left: 5%;
 }
 
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
 body.charactersBackground {
 	background-color: aqua;
 	background-size: cover;
@@ -127,6 +140,23 @@ body.zukoBody {
 
 
 @media screen and (max-width: 425px) {
+	nav {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	nav a:first-child {
+		align-self: center;
+	}
+
+	nav a {
+		width: auto;
+	}
+
+	#indexTitle {
+		margin-top: 225px;
+	}
+
 	.charContainer {
 		flex-direction: column;
 		align-items: center;
