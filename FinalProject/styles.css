@@ -106,7 +106,13 @@ main {
 
 footer {
 	display: flex;
+	width: 100%;
 	justify-content: space-between;
+	background-color: goldenrod;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: -8px;
+	padding-right: 13px;
 }
 
 body.charactersBackground {
@@ -145,16 +151,18 @@ body.zukoBody {
 		align-items: flex-end;
 	}
 
-	nav a:first-child {
-		align-self: center;
+	nav a {
+		width: 100%;
+		padding: 0;
+		text-align: end;
 	}
 
-	nav a {
-		width: auto;
+	nav a:first-child {
+		text-align: center;
 	}
 
 	#indexTitle {
-		margin-top: 225px;
+		margin-top: 125px;
 	}
 
 	.charContainer {
